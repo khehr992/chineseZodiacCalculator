@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>chineseZodiac.html</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function animalFinder()
+      {
+        //1) get the year from the user
+        //2) Using "if - statements" and % (mod) determine animal
+        //3) Display animal
+        var year = document.getElementById("year").value;
+
+        if(year%12==0){
+            document.getElementById("pic").innerHTML = "<img src = 'monkey.png'>";
+        }else if(year%12==1){
+            document.getElementById("pic").innerHTML = "<img src = 'rooster.png'>";
+        }else if(year%12==2){
+            document.getElementById("pic").innerHTML = "<img src = 'dog.png'>";
+        }else if(year%12==3){
+            document.getElementById("pic").innerHTML = "<img src = 'pig.png'>";
+        }else if(year%12==4){
+            document.getElementById("pic").innerHTML = "<img src = 'rat.png'>";
+        }else if(year%12==5){
+            document.getElementById("pic").innerHTML = "<img src = 'ox.png'>";
+        }else if(year%12==6){
+            document.getElementById("pic").innerHTML = "<img src = 'tiger.png'>";
+        }else if(year%12==7){
+            document.getElementById("pic").innerHTML = "<img src = 'rabbit.png'>";
+        }else if(year%12==8){
+            document.getElementById("pic").innerHTML = "<img src = 'dragon.png'>";
+        }else if(year%12==9){
+            document.getElementById("pic").innerHTML = "<img src = 'snake.png'>";
+        }else if(year%12==10){
+            document.getElementById("pic").innerHTML = "<img src = 'horse.png'>";
+        }else if(year%12==11){
+            document.getElementById("pic").innerHTML = "<img src = 'goat.png'>";
+        }else{
+            
+        }
+
+        
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Chinese Zodiac!</h2>
+    <p>Enter a year in the box below to see your Chinese Zodiac.</p>
+    <input type= "text" id = "year">
+    <input type = "button" id="button" class="button" value = "Enter" onclick = "animalFinder()">
+    <br>
+    <span id = "pic"></span>
+  </body>
+</html>
